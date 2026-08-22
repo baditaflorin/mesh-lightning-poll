@@ -20,7 +20,7 @@ test("perf budget — LCP + TBT under threshold on cold load", async ({ page }) 
   const cdp = await page.context().newCDPSession(page);
   await cdp.send("Performance.enable");
 
-  await page.goto("/__APP_NAME__/", { waitUntil: "domcontentloaded" });
+  await page.goto("/mesh-lightning-poll/", { waitUntil: "domcontentloaded" });
 
   // PerformanceObserver-based LCP capture. We resolve as soon as the first
   // post-interactive LCP entry lands, with a 6s overall cap.
@@ -63,7 +63,7 @@ test("perf budget — LCP + TBT under threshold on cold load", async ({ page }) 
 });
 
 test("perf budget — INP under threshold after one interaction", async ({ page }) => {
-  await page.goto("/__APP_NAME__/", { waitUntil: "domcontentloaded" });
+  await page.goto("/mesh-lightning-poll/", { waitUntil: "domcontentloaded" });
 
   // Pick whatever's clickable; the budget cares about *any* interaction's
   // INP, not a specific feature. If nothing is clickable we pass trivially.

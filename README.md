@@ -1,14 +1,14 @@
 # **APP_NAME**
 
-[![pages](https://img.shields.io/badge/live-baditaflorin.github.io%2F__APP_NAME__-__ACCENT_NOHASH__)](https://baditaflorin.github.io/__APP_NAME__/)
-[![version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/baditaflorin/__APP_NAME__/blob/main/package.json)
+[![pages](https://img.shields.io/badge/live-baditaflorin.github.io%2Fmesh--lightning--poll-2864b6)](https://baditaflorin.github.io/mesh-lightning-poll/)
+[![version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/baditaflorin/mesh-lightning-poll/blob/main/package.json)
 [![license](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 > **DESCRIPTION**
 
-**Live → https://baditaflorin.github.io/__APP_NAME__/**
+**Live → https://baditaflorin.github.io/mesh-lightning-poll/**
 
-**Source → https://github.com/baditaflorin/__APP_NAME__**
+**Source → https://github.com/baditaflorin/mesh-lightning-poll**
 
 **Tip the dev (buy a coffee) → https://www.paypal.com/paypalme/florinbadita**
 
@@ -36,8 +36,8 @@ For local hacking:
 
 ```bash
 git clone https://github.com/baditaflorin/mesh-common
-git clone https://github.com/baditaflorin/__APP_NAME__
-cd __APP_NAME__
+git clone https://github.com/baditaflorin/mesh-lightning-poll
+cd mesh-lightning-poll
 npm install
 npm run dev
 ```
@@ -56,10 +56,10 @@ npm run dev
 
 The settings drawer lets the user override signaling and TURN endpoints. localStorage keys:
 
-- `__APP_NAME__:signalingUrl`
-- `__APP_NAME__:turnTokenUrl`
-- `__APP_NAME__:iceServers`
-- `__APP_NAME__:room`
+- `mesh-lightning-poll:signalingUrl`
+- `mesh-lightning-poll:turnTokenUrl`
+- `mesh-lightning-poll:iceServers`
+- `mesh-lightning-poll:room`
 
 If endpoints are blank or unreachable, the app falls back to STUN-only.
 
